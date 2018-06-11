@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+<!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <title>Harmonie tánc</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="author" content="Winkler" />
+    <meta name="description" content="" />
+    <meta property="og:image" content="#" />
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="" />
+    <meta name="twitter:title" content="" />
+
+<!-- Icons -->
+    <link rel="icon" type="image/png" href="#" sizes="16x16" />
+    <link rel="icon" type="image/png" href="#" sizes="32x32" />
+    <link rel="icon" type="image/png" href="#" sizes="96x96" />
+
+    <link rel="apple-touch-icon" sizes="120x120" href="#" />
+    <link rel="apple-touch-icon" sizes="152x152" href="#" />
+    <link rel="apple-touch-icon" sizes="167x167" href="#" />
+    <link rel="apple-touch-icon" sizes="180x180" href="#" />
+
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700|Rozha+One&amp;subset=latin-ext" rel="stylesheet" />
+
+<!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+<!-- Scripts -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div id="navbar" class="navbar">
+        <div class="site-identity">
+          <a class="to-top" href="#">
+            <img class="logo" src="assets/logo.svg"/>
+          </a>
+        </div>
+
+        <nav class="header-navigation">
+          <div id="toggle" class="toggle"><span></span></div>
+
+          <ul id="menu" class="menu">
+            <li v-for="menuItem in menuItems">
+              <a class="to-about" :href="menuItem.url">
+                {{ menuItem.name }}
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="uvp" class="uvp">
+      <div class="content uvp-text">
+        <h1 class="heading heading-1 heading-main">
+          Minden  mozdulatban önmagunkra találunk
+        </h1>
+
+        <div>
+          <h3 class="heading heading-3">
+            Art Jazz és kortárstánc tanfolyamok a belvárosban.
+          </h3>
+
+          <div class="scroll-down">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content about">
+
+    </section>
+
+    <section id="classes" class="content classes">
+      <ul class="class-list">
+        <li class="class-list-item" v-for="classItem in classItems">
+          <h2 class="heading heading-2">{{ classItem.title }}</h2>
+          <div class="class-list-text">
+            {{ classItem.text }}
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="workshop" class="content workshop">
+
+    </section>
+
+    <section id="performance" class="content performance">
+
+    </section>
+
+    <section id="contact" class="content contact">
+
+    </section>
+
+    <footer class="content footer">
+      <p class="copyright">
+        &copy; 2018
+        <!-- <script type="text/javascript">new Date().getFullYear()>2010&&document.write("–"+new Date().getFullYear());</script>,  -->
+        Harmonie tánc
+      </p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/classes.js"></script>
+  </body>
+</html>
