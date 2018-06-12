@@ -1,6 +1,7 @@
 new Vue({
-  el: '#menu',
+  el: '#navbar',
   data: {
+    showMenu: false,
     menuItems: [
       {name: 'rólam', url: '#about'},
       {name: 'táncórák', url: '#classes'},
