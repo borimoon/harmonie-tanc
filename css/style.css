@@ -10,7 +10,7 @@ body {
   font-weight: 300;
 }
 
-/*--- typography ---*/
+/* headings */
 h1 {
   font-size: 3.2rem;
   font-weight: 100;
@@ -27,11 +27,17 @@ h3 {
 }
 
 .heading {
-  line-height: 1.1;
+  line-height: 1.3;
+  padding: .5em 0 1em;
 }
 
 .heading-main {
+  line-height: 1.3;
   margin-top: 2em;
+}
+
+.subheading {
+  line-height: 1.1;
 }
 
 .heading-2 {
@@ -49,6 +55,10 @@ a {
   line-height: 1.6;
 }
 
+strong {
+  font-weight: 700;
+}
+
 /*--- links ---*/
 a {
   color: #171717;
@@ -62,8 +72,17 @@ a {
 }
 
 /*--- images ---*/
+.image {
+  overflow: hidden;
+  width: 100%;
+}
 
-/*--- LAYOUT STYLES ---*/
+.image img {
+  height: auto;
+  width: 100%;
+}
+
+/*--- LAYOUT ---*/
 /*--- header ---*/
 .header {
   background-color: #fff;
@@ -211,12 +230,12 @@ a {
 }
 
 /*--- main content ---*/
-/* uvp */
 .content {
   margin: 0 1.5rem;
   padding-top: 10em;
 }
 
+/* uvp */
 .uvp {
   background: url('../assets/hero-image.jpg') no-repeat center center;
   background-size: cover;
@@ -235,7 +254,44 @@ a {
   margin: 0 1.5rem;
 }
 
+.uvp-subheading {
+  margin-bottom: 3em;
+}
+
+.mark-purple {
+  background-color: #F11F96;
+  color: #fff;
+  padding: .2em .5em .3em;
+}
+
+/* about */
+.purple {
+  color: #F11F96;
+}
+
+.about-image {
+  overflow: hidden;
+  width: 100%;
+}
+
+.about-image img {
+  height: auto;
+  width: 50%;
+}
+
+.about-me {
+  margin-bottom: 3em;
+}
+
 /* classes */
+.description {
+  margin-bottom: 5em;
+}
+
+.description iframe {
+  width: 100%;
+}
+
 .class-list-text {
   margin-bottom: 1.7em;
 }
@@ -248,7 +304,7 @@ a {
   grid-row-gap: 22px;
 }
 
-.timetable div {
+.timetable > div {
   line-height: 1.3;
   min-width: 60px;
   max-width: 100px;
@@ -283,21 +339,81 @@ a {
   font-weight: 400;
 }
 
-/*--- footer ---*/
+/*--- workshop ---*/
+
+/*--- performance ---*/
+
+/*--- contact ---*/
+
 /* social */
+.social {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.social li {
+  margin: 0 .7em;
+}
+
+/*--- footer ---*/
+.copyright {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
 
 
 /*-------------------*/
 /*------- 600 -------*/
 /*-------------------*/
 @media (min-width: 600px) {
-  /*--- LAYOUT STYLES 600---*/
+  /*--- LAYOUT 600---*/
   /*--- header 600 ---*/
   /* menu 600 */
 
   /*--- main content 600 ---*/
+  /* about 600 */
+  .about {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .about-image {
+    -webkit-flex: 3 1;
+    flex: 3 1;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .about-description {
+    -webkit-flex: 9 1;
+    flex: 9 1;
+  }
 
   /* classes 600 */
+  .description {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .description > p {
+    -webkit-flex: 5 1;
+    flex: 5 1;
+  }
+
+  .text-left {
+    margin-right: 3.5rem;
+  }
+
+  .description > div {
+    -webkit-flex: 7 1;
+    flex: 7 1;
+  }
+
   .class-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -305,14 +421,25 @@ a {
     grid-row-gap: 60px;
   }
 
-  /*--- footer 600 ---*/
+  /*--- workshop 600 ---*/
+  .text-right {
+    margin-left: 3.5rem;
+  }
+
+  /*--- performance 600 ---*/
+
+  /*--- contact 600 ---*/
+
   /* social 600 */
+
+  /*--- footer 600 ---*/
 }
 
 /*-------------------*/
 /*------- 900 -------*/
 /*-------------------*/
 @media (min-width: 900px) {
+  /*--- headings 900 ---*/
   .heading-main {
     max-width: 50%;
   }
@@ -348,11 +475,27 @@ a {
   }
 
   /*--- main content 900 ---*/
-
-
   /* uvp 900 */
   .uvp {
     background-size: contain;
+  }
+
+  /* about 900 */
+  .about-description > div {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .about-head {
+    -webkit-flex: 2 1;
+    flex: 2 1;
+    margin-right: 3.5rem;
+    text-align: right;
+  }
+
+  .about-text {
+    -webkit-flex: 6 1;
+    flex: 6 1;
   }
 
   /* classes 900 */
@@ -360,54 +503,36 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  /*--- footer 900 ---*/
+  /*--- workshop 900 ---*/
+
+  /*--- performance 900 ---*/
+
+  /*--- contact 900 ---*/
+
   /* social 900 */
+
+  /*--- footer 900 ---*/
 }
 
 /*-------------------*/
 /*------- 1200 -------*/
 /*-------------------*/
 @media (min-width: 1200px) {
+  /* headings 1200 */
   .heading-main {
     max-width: 532px;
   }
 
   .heading-1 {
-    font-size: 6.7rem;
+    font-size: 5.9rem;
   }
 
   .heading-2 {
-    font-size: 3.5rem;
-  }
-
-  .class-list-item:last-child::before {
-    background-color: #9B9B9B;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1px;
-  }
-
-  .class-list-item:last-child {
-    grid-column: 3 / span 2;
-    padding-left: 3.5rem;
-    position: relative;
-  }
-
-  .class-list-item:last-child .heading-2 {
-    color: #F11F96;
-    font-size: 4.2rem;
+    font-size: 2.9rem;
   }
 
   .heading-3 {
-    font-size: 2.7rem;
-  }
-
-  .submit {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
   }
 
   /*--- LAYOUT STYLES 1200---*/
@@ -436,18 +561,49 @@ a {
     width: 1100px;
   }
 
+  /* about 1200 */
+  .about-head {
+    font-size: 3.9rem;
+  }
+
   /* classes 1200 */
   .class-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  /*--- footer 1200 ---*/
+  .class-list-item:last-child::before {
+    background-color: #9B9B9B;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+
+  .class-list-item:last-child {
+    grid-column: 3 / span 2;
+    padding-left: 3.5rem;
+    position: relative;
+  }
+
+  .class-list-item:last-child .heading-2 {
+    color: #F11F96;
+    font-size: 3.9rem;
+  }
+
+  .submit {
+    font-size: 2.7rem;
+  }
+
+  /*--- workshop 1200 ---*/
+
+  /*--- performance 1200 ---*/
+
+  /*--- contact 1200 ---*/
+
   /* social 1200 */
-}
 
-/*-------------------*/
-/*------- 1600 -------*/
-/*-------------------*/
-@media (min-width: 1600px) {
-
+  /*--- footer 1200 ---*/
 }
