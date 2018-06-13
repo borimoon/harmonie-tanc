@@ -84,16 +84,8 @@ a {
 
 /*--- LAYOUT ---*/
 /*--- header ---*/
-.header {
-  background-color: #fff;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-}
-
 .navbar {
+  background-color: #fff;
   -webkit-align-items: center;
   align-items: center;
   display: -webkit-flex;
@@ -102,6 +94,62 @@ a {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 0 1.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: calc(100% - 3rem);
+}
+
+.collapse {
+  -webkit-animation: collapse .5s ease forwards;
+          animation: collapse .5s ease forwards;
+}
+
+.open {
+  -webkit-animation: open .5s ease forwards;
+          animation: open .5s ease forwards;
+}
+
+@-webkit-keyframes collapse {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: -73px;
+  }
+}
+
+@keyframes collapse {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: -73px;
+  }
+}
+@-webkit-keyframes open {
+  from {
+    opacity: 0;
+    top: -73px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes open {
+  from {
+    opacity: 0;
+    top: -73px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 .site-identity a {
@@ -540,6 +588,7 @@ a {
   .navbar {
     height: 85px;
     padding: 0 2.7rem;
+    width: calc(100% - 5.4rem);
   }
 
   .site-identity a {

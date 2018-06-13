@@ -1,4 +1,5 @@
-new Vue({
+Vue.use(VueSmoothScroll);
+var menu = new Vue({
   el: '#navbar',
   data: {
     showMenu: false,

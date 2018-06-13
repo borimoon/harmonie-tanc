@@ -1,4 +1,4 @@
-new Vue({
+var classes = new Vue({
   el: '#classes',
   data: {
     classItems: [

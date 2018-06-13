@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="author" content="Winkler" />
+    <meta name="author" content="borimoon" />
     <meta name="description" content="" />
     <meta property="og:image" content="#" />
     <meta property="og:description" content="" />
@@ -32,25 +32,26 @@
     <link rel="stylesheet" href="css/style.css" />
 
 <!-- Scripts -->
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-smooth-scroll@1.0.11"></script>
   </head>
 
   <body>
     <!-- header -->
-    <header class="header">
-      <div id="navbar" class="navbar">
+    <header id="header" class="header">
+      <div class="navbar" :class="collapseNavbar">
         <div class="site-identity">
-          <a class="to-top" href="#">
+          <a class="to-top" href="#uvp" v-smooth-scroll>
             <img class="logo" src="assets/logo.svg"/>
           </a>
         </div>
 
         <nav class="header-navigation">
-          <div id="toggle" :class="[showMenu ? 'toggle menuopen' : 'toggle']" @click="showMenu = !showMenu"><span></span></div>
+          <div :class="[showMenu ? 'toggle menuopen' : 'toggle']" @click="showMenu = !showMenu"><span></span></div>
 
-          <ul id="menu" class="menu" v-show="showMenu">
+          <ul class="menu" v-show="showMenu">
             <li v-for="menuItem in menuItems" @click="showMenu = !showMenu">
-              <a class="to-about" :href="menuItem.url">
+              <a class="to-about" :href="menuItem.url" v-smooth-scroll>
                 {{ menuItem.name }}
               </a>
             </li>
@@ -210,11 +211,11 @@
           </a>
         </li>
 
-        <li>
+        <!-- <li>
           <a href="https://www.facebook.com/harmonietanc/" target="blank">
             <img src="assets/insta-icon.svg" alt="instagram"/>
           </a>
-        </li>
+        </li> -->
       </ul>
     </section>
 
@@ -226,7 +227,8 @@
       </p>
     </footer>
 
-    <script src="js/menu.js"></script>
+    <script src="js/navigation.js"></script>
     <script src="js/classes.js"></script>
+    <!-- <script src="js/smooth-scroll.js"></script> -->
   </body>
 </html>
