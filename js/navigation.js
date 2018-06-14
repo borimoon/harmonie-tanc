@@ -18,7 +18,7 @@ var navigation = new Vue({
   },
 
   methods: {
-    scrollDetect: function scrollDetect(home, down, up) {
+    scrollDetect: function(home, down, up) {
       // Current scroll position
       var currentScroll = this.scrollTop();
       if (this.scrollTop() === 0) {
@@ -33,26 +33,26 @@ var navigation = new Vue({
     },
 
     // Returns current scroll position
-    scrollTop: function scrollTop() {
+    scrollTop: function() {
       return window.scrollY;
     },
 
     // Called when scroll is in initial position
-    scrollHome: function scrollHome() {},
+    scrollHome: function() {},
 
     // Called when scrolled down
-    scrollDown: function scrollDown() {
+    scrollDown: function() {
       this.collapseNavbar.collapse = true;
       this.collapseNavbar.open = false;
     },
 
     // Called when scolled up
-    scrollUp: function scrollUp() {
+    scrollUp: function() {
       this.collapseNavbar.collapse = false;
       this.collapseNavbar.open = true;
     }
   },
-  created: function created() {
+  created: function() {
     var _this = this;
 
     window.addEventListener('scroll', function () {
