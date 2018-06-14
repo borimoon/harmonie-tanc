@@ -1,3 +1,4 @@
+Vue.use(VueSmoothScroll);
 var classes = new Vue({
   el: '#classes',
   data: {

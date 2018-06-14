@@ -66,14 +66,12 @@
           Minden  mozdulatban önmagunkra találunk
         </h1>
 
-        <h3 class="subheading heading-3">
+        <h3 class="heading-3">
           Art Jazz és kortárstánc tanfolyamok a belvárosban<span class="purple">.</span>
         </h3>
       </div>
 
-      <div class="scroll-down">
-        <img src="assets/scroll-down-icon.svg" alt="scroll-down" />
-      </div>
+      <a class="next-link" :href="toAbout" v-smooth-scroll><span class="next"></span></a>
     </section>
 
     <section id="about" class="content about">
@@ -143,9 +141,7 @@
         </li>
       </ul>
 
-      <div class="class-submit">
-        <button type="button" name="button" class="submit">jelentkezem</button>
-      </div>
+      <a class="submit class-submit" href="#contact" v-smooth-scroll>jelentkezem</a>
 
       <div class="shape circle">
         <img src="assets/circle.svg" />
@@ -245,6 +241,7 @@
     </footer>
 
     <script src="js/navigation.js"></script>
+    <script src="js/cta.js"></script>
     <script src="js/classes.js"></script>
     <!-- <script src="js/smooth-scroll.js"></script> -->
   </body>
