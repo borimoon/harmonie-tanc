@@ -70,7 +70,7 @@ a {
   align-items: center;
   display: -webkit-flex;
   display: flex;
-  height: 50px;
+  height: 60px;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 0 1.5rem;
@@ -146,7 +146,9 @@ a {
 .toggle,
 .menuopen span::before,
 .menuopen span::after {
+  height: 30px;
   position: relative;
+  width: 37px;
   z-index: 99999;
 }
 
@@ -167,6 +169,7 @@ a {
   -moz-transition: background-color .7s ease;
   -ms-transition: background-color .7s ease;
   -o-transition: background-color .7s ease;
+  top: 14px;
   transition: background-color .7s ease;
   width: 37px;
 }
@@ -187,11 +190,11 @@ a {
 }
 
 .toggle span::before {
-  top: -13px;
+  top: -14px;
 }
 
 .toggle span::after {
-  bottom: -13px;
+  top: 14px;
 }
 
 .menuopen span {
@@ -219,19 +222,19 @@ a {
 }
 
 .menuopen span::before {
-  -webkit-transform: translateY(13px) rotateZ(45deg);
-  -moz-transform: translateY(13px) rotateZ(45deg);
-  -ms-transform: translateY(13px) rotateZ(45deg);
-  -o-transform: translateY(13px) rotateZ(45deg);
-  transform: translateY(13px) rotateZ(45deg);
+  -webkit-transform: translateY(14px) rotateZ(45deg);
+  -moz-transform: translateY(14px) rotateZ(45deg);
+  -ms-transform: translateY(14px) rotateZ(45deg);
+  -o-transform: translateY(14px) rotateZ(45deg);
+  transform: translateY(14px) rotateZ(45deg);
 }
 
 .menuopen span::after {
-  -webkit-transform: translateY(-13px) rotateZ(-45deg);
-  -moz-transform: translateY(-13px) rotateZ(-45deg);
-  -ms-transform: translateY(-13px) rotateZ(-45deg);
-  -o-transform: translateY(-13px) rotateZ(-45deg);
-  transform: translateY(-13px) rotateZ(-45deg);
+  -webkit-transform: translateY(-14px) rotateZ(-45deg);
+  -moz-transform: translateY(-14px) rotateZ(-45deg);
+  -ms-transform: translateY(-14px) rotateZ(-45deg);
+  -o-transform: translateY(-14px) rotateZ(-45deg);
+  transform: translateY(-14px) rotateZ(-45deg);
 }
 
 /* menu */
@@ -309,7 +312,7 @@ a {
   bottom: 20px;
   cursor: pointer;
   display: block;
-  height: 34px;
+  height: 30px;
   left: 50%;
   margin-left: -33px;
   position: absolute;
@@ -330,7 +333,7 @@ a {
 }
 
 .next::before {
-  left: 0;
+  left: 1px;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
   -ms-transform: rotateZ(45deg);
