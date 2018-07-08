@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="author" content="borimoon" />
-    <meta name="description" content="" />
-    <meta property="og:image" content="#" />
-    <meta property="og:description" content="" />
-    <meta property="og:title" content="" />
-    <meta name="twitter:title" content="" />
+    <meta name="description" content="Art Jazz és kortárstánc tanfolyamok a belvárosban" />
+    <meta property="og:image" content="assets/og.jpg" />
+    <meta property="og:description" content="Art Jazz és kortárstánc tanfolyamok a belvárosban" />
+    <meta property="og:title" content="Harmonie tánc" />
+    <meta name="twitter:title" content="Harmonie tánc" />
 
 <!-- Icons -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png" />
@@ -41,7 +41,7 @@
     <header id="header" class="header">
       <div class="navbar" :class="collapseNavbar">
         <div class="site-identity">
-          <a class="to-top" href="#uvp" v-smooth-scroll>
+          <a class="to-top" href="#hello" v-smooth-scroll>
             <img class="logo" src="assets/logo.svg"/>
           </a>
         </div>
@@ -60,7 +60,7 @@
       </div>
     </header>
 
-    <section id="uvp" class="uvp">
+    <section id="hello" class="uvp">
       <div class="uvp-text">
         <h1 class="heading-main heading-1">
           Minden  mozdulatban önmagunkra találunk
@@ -74,41 +74,45 @@
       <a class="next-link" :href="toAbout" v-smooth-scroll><span class="next"></span></a>
     </section>
 
-    <section id="about" class="content about">
-      <div class="about-image">
-        <img src="images/about-image.jpg" alt="rólam" />
-      </div>
+    <section id="rolam" class="content about">
+      <h1 class="heading heading-1">Rólam</h1>
 
-      <div class="about-description">
-        <div class="about-me">
-          <h2 class="subheading heading-2 about-head">Szia, Szabó Ildi vagyok<span class="purple">.</span></h2>
-
-          <p class="text about-text">
-            Szenvedélyem a tanítás, átadni mindazt, amit megtapasztaltam a táncon keresztül. Ez a cél vezérelt mindig, rámutatni, mi mindenre vagyunk képesek, milyen gyönyörű mozdulatokban tudjuk kifejezni az érzéseinket. Moderntánc-pedagógusként diplomáztam a Magyar Táncművészeti Főiskolán. Van egy kutyám, Jeté. Mindketten szeretjük a zenét, és a jó társaságot.
-          </p>
-
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/about-image.jpg" alt="rólam" />
         </div>
 
-        <div class="about-dance">
-          <h2 class="subheading heading-2 about-head">Táncot tanítok<span class="purple">:</span></h2>
+        <div class="about-description">
+          <div class="about-me">
+            <h2 class="subheading heading-2 about-head">Szia, Szabó Ildi vagyok<span class="purple">.</span></h2>
 
-          <p class="text about-text">
-            Felnőtteknek tartok tánckurzusokat Budapesten,  VII. kerületi vidám stúdiómban, nyitott, befogadó légkörben. Kis létszámú csoportokat indítok, hogy mindenkire egyenként is oda tudjak figyelni. Nem baj, ha nem táncoltál korábban, tanítványaim közül sokan előképzettség nélkül érkeztek, majd a tánc az életük részévé vált. Korhatár nincs, várlak szeretettel.
-          </p>
+            <p class="text about-text">
+              Szenvedélyem a tanítás. Átadni mindazt, amit megtapasztaltam a táncon keresztül. Ez a cél vezérelt mindig: rámutatni, mi mindenre vagyunk képesek, milyen gyönyörű mozdulatokban tudjuk kifejezni az érzéseinket. Moderntánc-pedagógusként diplomáztam a Magyar Táncművészeti Főiskolán. Van egy kutyám, Jeté. Mindketten szeretjük a zenét, és a jó társaságot.
+            </p>
+
+          </div>
+
+          <div class="about-dance">
+            <h2 class="subheading heading-2 about-head">Táncot tanítok<span class="purple">:</span></h2>
+
+            <p class="text about-text">
+              Felnőtteknek tartok tánckurzusokat Budapesten, VII. kerületi vidám stúdiómban, nyitott, befogadó légkörben. Kis létszámú csoportokat indítok, hogy mindenkire egyenként is oda tudjak figyelni. Nem baj, ha nem táncoltál korábban, tanítványaim közül sokan előképzettség nélkül érkeztek hozzám. Korhatár nincs, várlak szeretettel.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="shape triangle">
-        <img src="assets/triangle.svg" />
+        <div class="shape triangle">
+          <img src="assets/triangle.svg" />
+        </div>
       </div>
     </section>
 
-    <section id="classes" class="content classes">
+    <section id="tancorak" class="content classes">
       <h1 class="heading heading-1">Táncórák</h1>
 
       <div class="description">
         <p class="text text-left">
-          Válogass a táncórák között, hogy megtaláld a neked való mozdulatvilágot, keresd meg az órarendben, és ha jó az időpont, jelentkezz az órára. Az órák 90 percesek. Kényelmes öltözetben gyere, ami nem gátol a mozgásban. Zokniban táncolunk, cipőre nem is lesz szükséged.
+          Aktuális állandó kurzusaimról itt tudsz tájékozódni. A kuzus leírása alatt láthatod, milyen időpont(ok)ban van az óra, illetve milyen erősségű. Ha esküvőtáncra vagy magánórára szeretnél jönni, egyeztessünk időpontot. Az órák 90 percesek. Kényelmes öltözetben gyere, ami nem gátol a mozgásban. Zokniban táncolunk, cipőre nem is lesz szükséged.
         </p>
 
         <div>
@@ -148,7 +152,7 @@
       </div>
     </section>
 
-    <section id="workshop" class="content workshop">
+    <section id="workshopok" class="content workshop">
       <h1 class="heading heading-1">Workshopok</h1>
 
       <div class="description">
@@ -156,9 +160,17 @@
           <img src="images/workshop-image.jpg" alt="workshop" />
         </div>
 
-        <p class="text text-right">
-          Tölts el velünk egy táncos napot! Az intenzív táncórákon, új gyakorlatokkal, koreográfiákkal dolgozunk. Minden kurzus más, emiatt izgalmas, változatos tánckombinációkban mélyülünk el. Itt egy izgalmas, közös élménynek lehetsz a részese.
-        </p>
+        <div class="text text-right">
+          <p>
+          Rendszeresen indítok olyan hétvégi/egyhetes intenzív kurzusokat, ahol a megszokottól eltérő, új gyakorlatokkal és koreográfiákkal dolgozunk. Minden alkalommal más-más izgalmas, változatos tánckombinációkban mélyülünk el.
+          </p>
+
+          <p class="new-course">
+            <strong>
+              Július 9-től újra egyhetes intenzív tánckurzus! A részletekről tájékozódj <a href="https://www.facebook.com/events/1019582844885870/" target="blank">az esemény facebook oldalán!</a>
+            </strong>
+          </p>
+        </div>
       </div>
 
       <div class="shape zigzag">
@@ -166,12 +178,12 @@
       </div>
     </section>
 
-    <section id="performance" class="content performance">
+    <section id="eloadasok" class="content performance">
       <h1 class="heading heading-1">Előadások</h1>
 
       <div class="description">
         <p class="text text-left">
-          Az évek alatt, több táncelőadást álmodtunk meg, aminek a megvalósítása, óriási élmény volt. Kísérleteztünk, szoba színházi bemutatókkal, létrehoztunk több önálló  előadást. Történeteket meséltünk el a tánc nyelvén, ami közelebb hozott minket is egymáshoz. A közönségben visszatérő nézőink lettek, ami hatalmas öröm számunkra. A célunk, hogy egyre színvonalasabb darabot hozzunk létre a jövőben is.
+          Növendékeimmel az elmúlt évek során több táncelőadást álmodtunk meg, aminek a megvalósítása óriási élmény volt. Kísérleteztünk szobaszínházi bemutatókkal, történeteket meséltünk el a tánc nyelvén, ami közelebb hozott minket egymáshoz. Visszatérő nézőink lettek, akiknek nagyon örülünk. Célunk, hogy egyre színvonalasabb előadásokat hozzunk létre.
         </p>
 
         <div>
@@ -184,7 +196,7 @@
       </div>
     </section>
 
-    <section id="contact" class="content contact">
+    <section id="kapcsolat" class="content contact">
       <h1 class="heading heading-1">Kapcsolat</h1>
 
       <div class="description">
@@ -195,7 +207,7 @@
         <div class="text-right">
           <h2 class="subheading heading-2">Jelentkezz<span class="purple">!</span></h2>
 
-          <p>
+          <p class="mail">
             <a href="mailto:harmoniejazztanc@gmail.com">harmoniejazztanc@gmail.com</a>
           </p>
 

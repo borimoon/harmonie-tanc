@@ -4,11 +4,11 @@ var navigation = new Vue({
   data: {
     showMenu: false,
     menuItems: [
-      {name: 'rólam', url: '#about'},
-      {name: 'táncórák', url: '#classes'},
-      {name: 'workshopok', url: '#workshop'},
-      {name: 'előadások', url: '#performance'},
-      {name: 'kapcsolat', url: '#contact'}
+      {name: 'rólam', url: '#rolam'},
+      {name: 'táncórák', url: '#tancorak'},
+      {name: 'workshopok', url: '#workshopok'},
+      {name: 'előadások', url: '#eloadasok'},
+      {name: 'kapcsolat', url: '#kapcsolat'}
     ],
     collapseNavbar: {
       collapse: false,

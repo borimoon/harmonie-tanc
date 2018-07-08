@@ -1,6 +1,6 @@
 Vue.use(VueSmoothScroll);
 var classes = new Vue({
-  el: '#classes',
+  el: '#tancorak',
   data: {
     classItems: [
       {
@@ -71,13 +71,13 @@ var classes = new Vue({
     },
 
       {title: 'Esküvőtánc',
-      text: 'Ha egy igazán különleges koreográfiát táncolnátok el a nagy napon, egy általatok választott zenére, személyre szabottan, olyan mozdulatokból építjük fel a koreográfiát, amiben mindketten jól érzitek magatokat. A keringő mellett, kérésre emeléseket, szép karvezetéseket, meghitt pillanatokat is beépíthetünk a táncotokba.'},
+      text: 'Ha egy igazán különleges koreográfiát táncolnátok el a nagy napon, egy általatok választott zenére, személyre szabott mozdulatokból építjük fel esküvői táncotokat. A hagyományos keringő mellett kérésre emeléseket, szép karvezetéseket, egyedi kompozíciókat is beépítünk a koreográfiátokba.'},
 
       {title: 'Magánóra',
-      text: 'Ha szeretnél a saját tempódban haladni, vannak ötleteid, amiket megvalósítanál, esetleg felvételire, fellépésre készülsz, lehetőséged van magánórát foglalni. Beszéljünk meg egy időpontot.'},
+      text: 'Ha szeretnél a saját tempódban haladni, vannak ötleteid, amiket megvalósítanál, esetleg felvételire, fellépésre készülsz, lehetőséged van magánórát foglalni. Egyeztessünk időpontot!'},
 
       {title: 'Ha nehéz választani…',
-      text: '…írj bátran és segítek. Az első táncórádon, megajándékozunk egy plusz alkalommal, hogy két tánctechnikát, vagy fejlesztő táncórát is kipróbálhass. Így biztosan megtalálod azt a mozdulatvilágot, ami hozzád a legközelebb áll. Így az első héten 2 táncórán is részt vehetsz.'}
+      text: '…írj bátran, és segítek. Az első táncórádon megajándékozlak egy plusz alkalommal, hogy kétfajta táncórát is kipróbálhass egy áráért. Így könnyebben megtalálod azt a mozdulatvilágot, ami hozzád a legközelebb áll.'}
     ]
   }
 });

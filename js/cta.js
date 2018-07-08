@@ -1,7 +1,7 @@
 Vue.use(VueSmoothScroll);
 var cta = new Vue({
-  el: '#uvp',
+  el: '#hello',
   data: {
-    toAbout: '#about'
+    toAbout: '#rolam'
   }
 });
