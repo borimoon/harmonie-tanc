@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
 <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
     <script src="https://unpkg.com/vue-smooth-scroll@1.0.11"></script>
   </head>
 
@@ -165,11 +165,10 @@
           Rendszeresen indítok olyan hétvégi/egyhetes intenzív kurzusokat, ahol a megszokottól eltérő, új gyakorlatokkal és koreográfiákkal dolgozunk. Minden alkalommal más-más izgalmas, változatos tánckombinációkban mélyülünk el.
           </p>
 
-          <p class="new-course">
+          <!-- <p class="new-course">
             <strong>
-              Július 9-től újra egyhetes intenzív tánckurzus! A részletekről tájékozódj <a href="https://www.facebook.com/events/1019582844885870/" target="blank">az esemény facebook oldalán!</a>
             </strong>
-          </p>
+          </p> -->
         </div>
       </div>
 
@@ -221,8 +220,8 @@
             Budapest VII., Szövetség u. 25.
           </p>
 
-          <div id="map" class="map">
-          </div>
+          <!-- <div id="map" class="map">
+          </div> -->
         </div>
       </div>
 
@@ -258,150 +257,5 @@
     <script src="js/navigation.js"></script>
     <script src="js/cta.js"></script>
     <script src="js/classes.js"></script>
-
-    <script>
-      function initMap() {
-        var harmonie = {lat: 47.500807, lng: 19.073208};
-        var map = new google.maps.Map(
-          document.getElementById('map'), {
-            zoom: 17,
-            center: harmonie,
-            styles: [
-              {
-                  "featureType": "administrative",
-                  "elementType": "labels.text.fill",
-                  "stylers": [
-                      {
-                          "color": "#0c0b0b"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "landscape",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "color": "#f2f2f2"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "poi",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "off"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "saturation": -100
-                      },
-                      {
-                          "lightness": 45
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road",
-                  "elementType": "labels.text.fill",
-                  "stylers": [
-                      {
-                          "color": "#090909"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road.highway",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "simplified"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "road.arterial",
-                  "elementType": "labels.icon",
-                  "stylers": [
-                      {
-                          "visibility": "off"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "transit",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "visibility": "off"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "water",
-                  "elementType": "all",
-                  "stylers": [
-                      {
-                          "color": "#d4e4eb"
-                      },
-                      {
-                          "visibility": "on"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "water",
-                  "elementType": "geometry.fill",
-                  "stylers": [
-                      {
-                          "visibility": "on"
-                      },
-                      {
-                          "color": "#fef7f7"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "water",
-                  "elementType": "labels.text.fill",
-                  "stylers": [
-                      {
-                          "color": "#9b7f7f"
-                      }
-                  ]
-              },
-              {
-                  "featureType": "water",
-                  "elementType": "labels.text.stroke",
-                  "stylers": [
-                      {
-                          "color": "#fef7f7"
-                      }
-                  ]
-              }
-            ]
-          });
-
-          var marker = new google.maps.Marker({
-            position: map.getCenter(),
-            map: map,
-            icon: {
-              path: google.maps.SymbolPath.CIRCLE,
-              fillColor: '#f11f96',
-              fillOpacity: 1,
-              scale: 7,
-              strokeWeight: 0,
-              strokeColor: 'transparent',
-            }
-          });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVKBWC1P3pGjp4khTe0Q3cy-cEZbYZPw4&callback=initMap"
-    async defer></script>
   </body>
 </html>
